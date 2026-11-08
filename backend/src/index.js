@@ -12,7 +12,7 @@ import User from "./models/User.model.js";
 import { connectDB } from "./lib/db.js";
 import job from "./lib/cron.js";
 
-import clerkWebhook from "./webhooks/clerk.webhook.js";
+import clerkWebhook from "./webhooks/index.js";
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 import { app, server } from "./lib/socket.js";
